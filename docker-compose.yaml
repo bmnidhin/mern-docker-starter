@@ -1,0 +1,26 @@
+version: '0.0.1'
+server:
+  image: node:7
+  command: npm run backend
+  working_dir: /app
+  volumes:
+    - ./server:/app
+  environment:
+    PORT: 3000
+  ports:
+    - "3000:3000"
+  links:
+    - mongodb
+
+frontend:
+  image: node:7
+  command: npm run webpack
+  working_dir: /app
+  volumes:
+    - ./frontend:/app
+  ports:
+    - "4000:4000"
+mongodb:
+  image: mongo
+  ports:
+      - "27017:27017"
