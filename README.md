@@ -88,7 +88,13 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
+### Todo
+- Figma Design
+- UX Design
+- Add a todo option
+- Banking (Airtable API)
+- Vault
+- Notes (Notion API)
 
 ### Built With
 
